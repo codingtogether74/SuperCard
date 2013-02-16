@@ -38,7 +38,7 @@
 -(void)pinch:(UIPinchGestureRecognizer *)gesture
 {
     if ((gesture.state== UIGestureRecognizerStateChanged) || (gesture.state == UIGestureRecognizerStateEnded)) {
-        self.faceCardScaleFactor = gesture.scale;
+        self.faceCardScaleFactor *= gesture.scale;
         gesture.scale =1;
     }
 }

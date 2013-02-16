@@ -32,8 +32,6 @@
     [playingCardView addGestureRecognizer:[[UIPinchGestureRecognizer alloc]
                           initWithTarget:playingCardView
                                    action:@selector(pinch:)]];
-    
-    
 }
 -(void)drawRandomPlayingCard
 {
